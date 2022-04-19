@@ -24,7 +24,7 @@ import tech.jhipster.config.JHipsterProperties;
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
 @Import(SecurityProblemSupport.class)
 public class SecurityConfiguration {
-
+//JHipster Security Configs only work with the Ultimate version with Sprint built in.
     private final JHipsterProperties jHipsterProperties;
 
     private final TokenProvider tokenProvider;
