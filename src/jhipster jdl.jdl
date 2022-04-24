@@ -1,0 +1,69 @@
+entity Photo {
+	title String,
+    description String,
+    date String,
+    height Integer,
+    width Integer
+}
+
+// an ignored comment
+/** not an ignored comment */
+
+
+entity Album {
+	title String required,
+    description String,
+
+}
+
+/**
+ * Task entity.
+ * @author The JHipster team.
+ */
+entity User {
+
+}
+
+entity Journaling {
+	title String,
+	date String,
+	journalEntry Long
+}
+
+entity FamilyTree {
+	name String,
+	age String,
+	location String
+}
+
+relationship OneToOne {
+	FamilyTree to User
+}
+
+relationship ManyToMany {
+    Journaling to FamilyTree,
+    Album to FamilyTree
+}
+
+// the defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Photos to FamilyTree
+}
+
+relationship ManyToOne {
+	Photo to Album,
+    Photo to FamilyTree
+}
+
+// Set pagination options
+//paginate JobHistory, Employee with infinite-scroll
+//paginate Job with pagination
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+//service all with serviceImpl except Employee, Job
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
