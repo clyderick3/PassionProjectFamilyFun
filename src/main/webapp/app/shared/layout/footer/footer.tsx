@@ -8,8 +8,8 @@ const Footer = () => (
   <div className="footer page-content">
     <Row>
       <Col md="12">
-        <p>
-         Testing 1, 2, 3...
+        <p style = {{textAlign: "center"}}>
+         Do it for the family.
         </p>
       </Col>
     </Row>
