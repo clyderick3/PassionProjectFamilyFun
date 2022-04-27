@@ -1,0 +1,30 @@
+{
+  "familyfunApp": {
+    "familyTree": {
+      "home": {
+        "title": "Family Trees",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Family Tree",
+        "createOrEditLabel": "Create or edit a Family Tree",
+        "notFound": "No Family Trees found"
+      },
+      "created": "A new Family Tree is created with identifier {{ param }}",
+      "updated": "A Family Tree is updated with identifier {{ param }}",
+      "deleted": "A Family Tree is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Family Tree {{ id }}?"
+      },
+      "detail": {
+        "title": "Family Tree"
+      },
+      "id": "ID",
+      "name": "Name",
+      "age": "Age",
+      "location": "Location",
+      "user": "User",
+      "photo": "Photo",
+      "journaling": "Journaling",
+      "album": "Album"
+    }
+  }
+}

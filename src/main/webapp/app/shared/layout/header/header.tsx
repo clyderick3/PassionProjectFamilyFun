@@ -28,6 +28,7 @@ const Header = (props: IHeaderProps) => {
     const langKey = event.target.value;
     Storage.session.set('locale', langKey);
     dispatch(setLocale(langKey));
+
   };
 
   const renderDevRibbon = () =>
@@ -45,7 +46,6 @@ const Header = (props: IHeaderProps) => {
 
   return (
     <div id="app-header">
-      {renderDevRibbon()}
       <LoadingBar className="loading-bar" />
       <Navbar data-cy="navbar" dark expand="md" fixed="top" className="bg-dark">
         <NavbarToggler aria-label="Menu" onClick={toggleMenu} />

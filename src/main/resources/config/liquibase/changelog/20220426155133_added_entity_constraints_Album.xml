@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <!--
+        Added the constraints for entity Album.
+    -->
+    <changeSet id="20220426155133-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="album_id"
+                                 baseTableName="rel_album__family_tree"
+                                 constraintName="fk_rel_album__family_tree__album_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="album"/>
+
+        <addForeignKeyConstraint baseColumnNames="family_tree_id"
+                                 baseTableName="rel_album__family_tree"
+                                 constraintName="fk_rel_album__family_tree__family_tree_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="family_tree"/>
+    </changeSet>
+</databaseChangeLog>

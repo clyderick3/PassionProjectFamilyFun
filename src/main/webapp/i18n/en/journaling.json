@@ -1,0 +1,27 @@
+{
+  "familyfunApp": {
+    "journaling": {
+      "home": {
+        "title": "Journalings",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Journaling",
+        "createOrEditLabel": "Create or edit a Journaling",
+        "notFound": "No Journalings found"
+      },
+      "created": "A new Journaling is created with identifier {{ param }}",
+      "updated": "A Journaling is updated with identifier {{ param }}",
+      "deleted": "A Journaling is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Journaling {{ id }}?"
+      },
+      "detail": {
+        "title": "Journaling"
+      },
+      "id": "ID",
+      "title": "Title",
+      "date": "Date",
+      "journalEntry": "Journal Entry",
+      "familyTree": "Family Tree"
+    }
+  }
+}

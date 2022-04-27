@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <!--
+        Added the constraints for entity Journaling.
+    -->
+    <changeSet id="20220426155134-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="journaling_id"
+                                 baseTableName="rel_journaling__family_tree"
+                                 constraintName="fk_rel_journaling__family_tree__journaling_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="journaling"/>
+
+        <addForeignKeyConstraint baseColumnNames="family_tree_id"
+                                 baseTableName="rel_journaling__family_tree"
+                                 constraintName="fk_rel_journaling__family_tree__family_tree_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="family_tree"/>
+    </changeSet>
+</databaseChangeLog>

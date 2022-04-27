@@ -1,0 +1,56 @@
+{
+  "applications": "*",
+  "changelogDate": "20220426155135",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "family_tree",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "age",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "location",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "FamilyTree",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "familyTree",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "photo",
+      "otherEntityRelationshipName": "familyTree",
+      "relationshipName": "photo",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "journaling",
+      "otherEntityRelationshipName": "familyTree",
+      "ownerSide": false,
+      "relationshipName": "journaling",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "album",
+      "otherEntityRelationshipName": "familyTree",
+      "ownerSide": false,
+      "relationshipName": "album",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}

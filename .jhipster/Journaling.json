@@ -1,0 +1,36 @@
+{
+  "applications": "*",
+  "changelogDate": "20220426155134",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "journaling",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "journalEntry",
+      "fieldType": "Long"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Journaling",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "familyTree",
+      "otherEntityRelationshipName": "journaling",
+      "ownerSide": true,
+      "relationshipName": "familyTree",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}

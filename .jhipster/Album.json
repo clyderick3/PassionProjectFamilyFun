@@ -1,0 +1,40 @@
+{
+  "applications": "*",
+  "changelogDate": "20220426155133",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "album",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "not an ignored comment",
+  "jpaMetamodelFiltering": false,
+  "name": "Album",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "familyTree",
+      "otherEntityRelationshipName": "album",
+      "ownerSide": true,
+      "relationshipName": "familyTree",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "photo",
+      "otherEntityRelationshipName": "album",
+      "relationshipName": "photo",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}
