@@ -1,6 +1,16 @@
 /* ==========================================================================
 Main page styles
 ========================================================================== */
+//.hipster {
+//  display: inline-block;
+//  width: 100%;
+//  height: 496px;
+//  background: url('../../../content/images/FTF Icon.png') no-repeat center top;
+//  background-size: contain;
+//    ///*Linear Gradient*/
+//    //background-image: linear-gradient(45.34deg, #EA52F8 5.66%, #0066FF 94.35%);
+//}
+
 .hipster {
   display: inline-flex;
   height: 315px;
@@ -11,6 +21,8 @@ Main page styles
   padding-left: 300px;
   background: url('../../../content/images/FTF Icon.png') no-repeat center top;
   background-size: 100%;
+  background-color: white;
+
 }
 
 .logo{

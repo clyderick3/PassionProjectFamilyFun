@@ -23,6 +23,7 @@ a {
 }
 
 .app-container {
+  background-color: white;
   box-sizing: border-box;
   .view-container {
     width: 100%;
@@ -31,6 +32,7 @@ a {
     overflow-x: hidden;
     padding: 1rem;
     .card {
+      background-color: white;
       padding: 1rem;
     }
     .view-routes {
