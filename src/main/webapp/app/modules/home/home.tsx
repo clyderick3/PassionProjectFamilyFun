@@ -19,7 +19,7 @@ export const Home = () => {
         <img src="content/images/FamilyIconWhite.png" alt="Logo" />
       </Col>
 
-      <Col md="9">
+      <Col md="9" center>
         <h2>
           Welcome to the Family.
         </h2>
@@ -55,9 +55,9 @@ export const Home = () => {
                 <Translate contentKey="global.messages.info.register.link">Register a new account</Translate>
               </Link>
             </Alert>
-            <body>
+            <body >
             <h4> Let us see what there is to offer.</h4>
-            <img src="https://c.tenor.com/I_-KjeRZFggAAAAC/flowers-tree.gif" alt="Logo" />
+            <img src="https://c.tenor.com/I_-KjeRZFggAAAAC/flowers-tree.gif" alt="Dancing Family Tree" />
 
             </body>
           </div>

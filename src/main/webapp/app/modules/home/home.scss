@@ -26,6 +26,7 @@ Main page styles
 
 h2 {
   font-style: italic;
+  align-content: center;
   //color: black;
 }
 
@@ -36,6 +37,7 @@ h2 {
 }
 
 button {
+  align-content: flex-end;
   box-shadow:inset 0px 1px 0px 0px #fce2c1;
   background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
   background-color:#ffc477;
