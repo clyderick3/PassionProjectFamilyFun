@@ -12,9 +12,13 @@ export const Home = () => {
 
   return (
     <Row>
-      <Col md="3" className="pad">
-        <span className="hipster rounded" />
+      <Col>
+        <Link to = "/login">
+          <button className = "btn btn-primary justify-content-center">Sign In</button>
+        </Link>
+        <img src="content/images/FamilyIconWhite.png" alt="Logo" />
       </Col>
+
       <Col md="9">
         <h2>
           Welcome to the Family.
@@ -51,9 +55,15 @@ export const Home = () => {
                 <Translate contentKey="global.messages.info.register.link">Register a new account</Translate>
               </Link>
             </Alert>
+            <body>
+            <h4> Let us see what there is to offer.</h4>
+            <img src="https://c.tenor.com/I_-KjeRZFggAAAAC/flowers-tree.gif" alt="Logo" />
+
+            </body>
           </div>
         )}
       </Col>
+
     </Row>
   );
 };
