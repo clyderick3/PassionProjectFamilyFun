@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import {Navbar, Nav, Button} from 'react-bootstrap' ; //Why is this greyed out?
 
 import getStore from 'app/config/store';
 import { registerLocale } from 'app/config/translation';
