@@ -18,7 +18,7 @@ export const Home = () => {
         <Link to = "/login">
           <button className = "btn btn-primary justify-content-center">Sign In</button>
         </Link>
-        <img src="content/images/FamilyIconWhite.png" alt="Logo" />
+        <img src="content/images/TheFamilyIcon.png" alt="Logo" />
       </Col>
 
       <Col md="9">
