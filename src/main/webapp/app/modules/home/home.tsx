@@ -9,8 +9,10 @@ import { useAppSelector } from 'app/config/store';
 
 export const Home = () => {
   const account = useAppSelector(state => state.authentication.account);
-
+//         <p style = {{textAlign: "center"}}>
   return (
+    <div style = {{textAlign: "center"}}>
+
     <Row>
       <Col>
         <Link to = "/login">
@@ -19,7 +21,7 @@ export const Home = () => {
         <img src="content/images/FamilyIconWhite.png" alt="Logo" />
       </Col>
 
-      <Col md="9" center>
+      <Col md="9">
         <h2>
           Welcome to the Family.
         </h2>
@@ -65,6 +67,7 @@ export const Home = () => {
       </Col>
 
     </Row>
+    </div>
   );
 };
 
