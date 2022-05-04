@@ -12,16 +12,18 @@ export const Home = () => {
 //         <p style = {{textAlign: "center"}}>
   return (
     <div style = {{textAlign: "center"}}>
-
-    <Row>
       <Col>
         <Link to = "/login">
           <button className = "btn btn-primary justify-content-center">Sign In</button>
         </Link>
+      </Col>
+    <Row>
+
+      <Col>
         <img src="content/images/TheFamilyIcon.png" alt="Logo" />
       </Col>
-
-      <Col md="9">
+<p></p>
+      <Col>
         <h2>
           Welcome to the Family.
         </h2>
